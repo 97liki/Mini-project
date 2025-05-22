@@ -157,14 +157,6 @@ export default function OnboardingForm() {
           onTokenChange={(token) => updateFormData({ motherduckToken: token })}
           groqToken={formData.groqToken}
           onGroqTokenChange={(token) => updateFormData({ groqToken: token })}
-          airbyteToken={formData.airbyteToken}
-          onAirbyteTokenChange={(token) =>
-            updateFormData({ airbyteToken: token })
-          }
-          airbyteConnectionId={formData.airbyteConnectionId}
-          onAirbyteConnectionIdChange={(id) =>
-            updateFormData({ airbyteConnectionId: id })
-          }
           onConnectionStatusChange={setIsConnected}
           onGroqStatusChange={setIsGroqConnected}
           onDatabaseSelect={handleDatabaseSelect}

@@ -1,6 +1,5 @@
 import MotherDuckConnection from "./database/MotherDuckConnection";
 import GroqConnection from "./database/GroqConnection";
-import AirbyteConfig from "./database/AirbyteConfig";
 import type { DataLimit } from "./DataSelectionStep";
 
 interface DatabaseConnectionProps {
@@ -8,10 +7,6 @@ interface DatabaseConnectionProps {
   onTokenChange: (token: string) => void;
   groqToken?: string;
   onGroqTokenChange: (token: string) => void;
-  airbyteToken?: string;
-  onAirbyteTokenChange?: (token: string) => void;
-  airbyteConnectionId?: string;
-  onAirbyteConnectionIdChange?: (id: string) => void;
   onConnectionStatusChange: (isConnected: boolean) => void;
   onGroqStatusChange: (isConnected: boolean) => void;
   onDatabaseSelect: (database: string, table: string) => void;
@@ -24,10 +19,6 @@ export default function DatabaseConnection({
   onTokenChange,
   groqToken,
   onGroqTokenChange,
-  airbyteToken,
-  onAirbyteTokenChange = () => {},
-  airbyteConnectionId,
-  onAirbyteConnectionIdChange = () => {},
   onConnectionStatusChange,
   onGroqStatusChange,
   onDatabaseSelect,
@@ -52,15 +43,6 @@ export default function DatabaseConnection({
           onTokenChange={onGroqTokenChange}
           onConnectionSuccess={() => onGroqStatusChange(true)}
           onConnectionError={() => onGroqStatusChange(false)}
-        />
-      </div>
-
-      <div className="pt-2">
-        <AirbyteConfig
-          airbyteToken={airbyteToken}
-          onAirbyteTokenChange={onAirbyteTokenChange}
-          airbyteConnectionId={airbyteConnectionId}
-          onAirbyteConnectionIdChange={onAirbyteConnectionIdChange}
         />
       </div>
     </div>
