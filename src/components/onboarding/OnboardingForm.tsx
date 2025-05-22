@@ -28,7 +28,6 @@ export default function OnboardingForm() {
   const [, setIsGroqConnected] = useState(false);
   const [focusedField, setFocusedField] = useState<string | null>(null);
   const [validationError, setValidationError] = useState<string | null>(null);
-  const [showOverlay, setShowOverlay] = useState(true);
 
   const { formData, updateFormData, isSubmitting, setIsSubmitting } =
     useOnboardingForm();
@@ -119,45 +118,6 @@ export default function OnboardingForm() {
       onSubmit={handleSubmit}
       className="space-y-8"
     >
-      {showOverlay && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className="fixed inset-0 bg-black/60 flex items-center justify-center z-50"
-        >
-          <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0.8, opacity: 0 }}
-            transition={{ type: "spring", stiffness: 200 }}
-            className="bg-white p-8 rounded-2xl shadow-2xl max-w-lg text-center space-y-6 mb-40"
-          >
-            <h2 className="text-indigo-700 font-extrabold text-xl mb-4 underline decoration-wavy-indigo decoration-purple-500">
-              One Small Thing!
-            </h2>
-            <p className="text-gray-700 text-base leading-relaxed">
-              Dear Amigo, thank you for being here! 🌟 <br />
-              Currently, this app provides analytics based on reviews with the
-              schema: <br />
-              <code className="bg-gray-100 text-sm px-2 py-1 rounded-lg">{`{ "text": "string", "label": "number" }`}</code>
-              <br />
-              Ensure your MotherDuck tables follow this schema for proper
-              functionality. <br />
-              We're working on supporting additional schemas soon.
-              <br />
-              Thank you for your cooperation! 🦆
-            </p>
-            <button
-              onClick={() => setShowOverlay(false)}
-              className="px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg shadow-md hover:shadow-lg hover:from-indigo-500 hover:to-purple-500 transition-all duration-300"
-            >
-              Got it!
-            </button>
-          </motion.div>
-        </motion.div>
-      )}
-
       {validationError && (
         <motion.div
           initial={{ opacity: 0, y: -10 }}
