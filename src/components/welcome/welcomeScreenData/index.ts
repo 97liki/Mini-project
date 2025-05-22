@@ -5,7 +5,7 @@ export const welcomeScreenData = {
   title: {
     gradient1: "Transform",
     textgradient1: "Your Business With",
-    gradient2: "Analysr",
+    gradient2: "GroSight",
   },
   features: [
     {
