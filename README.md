@@ -1,8 +1,8 @@
-# Analysr - Review Analytics Platform 📊
+# GroSight - Review Analytics Platform 📊
 
 ![image](https://github.com/user-attachments/assets/1b26013b-25e6-4b70-a725-8a42faa91336)
 
-<b>Transform your business with <code>Analysr</code></b>
+<b>Transform your business with <code>GroSight</code></b>
 
 ## ⚡ Speedy Summary
 This is my submission for <code>Airbyte-Motherduck Hackathon - December 2024 - January 2025</code>
@@ -10,24 +10,24 @@ This is my submission for <code>Airbyte-Motherduck Hackathon - December 2024 - J
 Here's a speedy summary:
 
 - **1.0.0**  
-  - With your customer reviews in Motherduck, along with your chosen business stack and areas of interest, Analysr is ready to dish out some insightful analytics. To sweeten the deal, Groq is also integrated to help you navigate all your growth phases.
+  - With your customer reviews in Motherduck, along with your chosen business stack and areas of interest, GroSight is ready to dish out some insightful analytics. To sweeten the deal, Groq is also integrated to help you navigate all your growth phases.
   - Your analytics lineup features Aspect Analysis, a Word Sentiment Heatmap (for those feelings), Advanced Text Analysis, Groq Business Analytics, Keyphrase Analysis, and a handy Competitive Advantage.
   - Check it out at:
-    - <code>[https://growwithanalysr.web.app/](https://growwithanalysr.web.app/) - Production</code>
-    - <code>[https://growwithanalysr-staging.vercel.app/](https://growwithanalysr-staging.vercel.app/) - Experimental, for new features</code>
+    - <code>[https://growwithgrosight.web.app/](https://growwithgrosight.web.app/) - Production</code>
+    - <code>[https://growwithgrosight-staging.vercel.app/](https://growwithgrosight-staging.vercel.app/) - Experimental, for new features</code>
 
 ## 📽️ Demonstration video
-[![Analysr Demo](https://img.youtube.com/vi/K7LROVzU16A/0.jpg)](https://www.youtube.com/watch?v=K7LROVzU16A)
+[![GroSight Demo](https://img.youtube.com/vi/K7LROVzU16A/0.jpg)](https://www.youtube.com/watch?v=K7LROVzU16A)
 
 ## 🏗️ Architecture
 ![image](https://github.com/user-attachments/assets/0abe96f6-414a-42d2-aa0d-d0950a7da194)
 
 
-## ❓ Why Analysr
+## ❓ Why GroSight
 
-- **Scale Beyond Regular AI Capabilities:** Traditional AI systems, like ChatGPT, struggle to handle extensive datasets (e.g., 65,000+ records) effectively. Analysr bridges this gap.
+- **Scale Beyond Regular AI Capabilities:** Traditional AI systems, like ChatGPT, struggle to handle extensive datasets (e.g., 65,000+ records) effectively. GroSight bridges this gap.
 - **Seamless Motherduck, Airbyte, Groq Integration:** Thanks to Motherduck wasm client, Airbyte's API and Groq SDK.
-- **Data-Driven Insights:** By combining AI with visualization tools, Analysr allows users to uncover trends, anomalies, and actionable insights quickly and intuitively.
+- **Data-Driven Insights:** By combining AI with visualization tools, GroSight allows users to uncover trends, anomalies, and actionable insights quickly and intuitively.
 - **User-Friendly Visualization:** Visual AI integration transforms raw data into understandable and compelling graphics, enabling better decision-making.
 - **Streamlined Process**: Reduces reliance on multiple tools by offering an all-in-one platform for schema analysis and visualization.
 
@@ -36,7 +36,7 @@ Here's a speedy summary:
 
 1) To obtain customer review insights, sync your data to Motherduck with the schema: <code>{ "review_text": "string", "stars": "number" }</code> (More schemas support are in the future roadmap). We recommend using Airbyte due to its extensive list of sources and seamless data movement. ![image](https://github.com/user-attachments/assets/415aece5-6594-4649-8d84-ec2fa1707988)
 ![image](https://github.com/user-attachments/assets/00bf63f5-952f-491a-9ffd-0241d2e2bfd2)
-2) Visit the Analysr website at (growwithanalysr.web.app) and click on the "Get Started Now" button for onboarding.
+2) Visit the GroSight website at (growwithgrosight.web.app) and click on the "Get Started Now" button for onboarding.
 ![image](https://github.com/user-attachments/assets/95da4b69-29bb-4c88-9433-19865bc72093)
 3) Select your business stack and substack; Groq and queries will use this information to fetch insights.
 ![image](https://github.com/user-attachments/assets/160c95bb-bad3-4c27-b5af-7fe651f2313c)
@@ -52,7 +52,7 @@ Here's a speedy summary:
 8) Finally, input your area of interest for insights, such as customer satisfaction, and click "Continue to Dashboard."![image](https://github.com/user-attachments/assets/3c938fa2-a862-4ba6-b06e-b67bb139e71f)
 9) Wait a few seconds until all queries are executed and visualized.
 ![image](https://github.com/user-attachments/assets/cf22aa51-cdb2-4e3f-99d6-ef93bf8f8c45)
-10) Voilà! Your dashboard will be ready, featuring all of Analysr's capabilities to support your next big step!
+10) Voilà! Your dashboard will be ready, featuring all of GroSight's capabilities to support your next big step!
 ![image](https://github.com/user-attachments/assets/1ae1427d-c315-4e02-ac75-158e3cb14d61)
 
 **Need a dataset and one example method to test?**
