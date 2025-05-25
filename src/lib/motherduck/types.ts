@@ -18,7 +18,7 @@ export interface ProcessedAnalytics {
   totalReviews: number;
   averageRating: number;
   sentimentScore: number;
-  competitorComparison: number;
+  performanceTrend: number;
   aspectAnalysis: AspectAnalysis[];
   negativeInsights: NegativeInsight[];
   positiveInsights: PositiveInsight[];

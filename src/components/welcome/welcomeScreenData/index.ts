@@ -16,8 +16,8 @@ export const welcomeScreenData = {
     },
     {
       icon: TrendingUp,
-      title: "Competitive Edge",
-      description: "Insights for every stage of company growth",
+      title: "Performance Trend",
+      description: "Shows recent vs historical performance trend for your business.",
     },
     {
       icon: Zap,

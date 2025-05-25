@@ -77,7 +77,7 @@ export async function fetchAnalytics(
       totalReviews: Number(stats.total_reviews),
       averageRating: Number(stats.avg_rating) || 0,
       sentimentScore: Number(stats.sentiment_score) || 0,
-      competitorComparison: Number(stats.market_position) || 0,
+      performanceTrend: Number(stats.market_position) || 0,
       aspectAnalysis,
       negativeInsights,
       positiveInsights,

@@ -6,7 +6,7 @@ interface StatGridProps {
     totalReviews: number;
     averageRating: number;
     sentimentScore: number;
-    competitorComparison: number;
+    performanceTrend: number;
   };
 }
 
@@ -31,12 +31,10 @@ export default function StatGrid({ analyticsData }: StatGridProps) {
       color: "purple",
     },
     {
-      title: "Competitive Advantage",
-      value: `${
-        analyticsData.competitorComparison > 0 ? "+" : ""
-      }${analyticsData.competitorComparison.toFixed(1)}%`,
+      title: "Performance Trend",
+      value: `$${analyticsData.performanceTrend > 0 ? "+" : ""}${analyticsData.performanceTrend.toFixed(1)}%`,
       icon: PieChart,
-      color: analyticsData.competitorComparison >= 0 ? "emerald" : "red",
+      color: analyticsData.performanceTrend >= 0 ? "emerald" : "red",
     },
   ];
 
